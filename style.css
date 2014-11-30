@@ -1,0 +1,55 @@
+
+h1, h2, h3, h4 {
+
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: black;
+
+}
+
+ul {
+    /*list-style-type: none*/
+}
+
+li::before {
+    /*content: "»";*/
+    /*margin-left:-9px;*/
+}
+
+li  {
+    margin-bottom: 12px;
+}
+
+b {
+    color: black;
+}
+
+body {
+    font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+a {
+    color: #4183C4;
+
+}
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+.main {
+    max-width: 800px;
+    margin: auto;
+}
