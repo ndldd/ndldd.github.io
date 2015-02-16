@@ -9,159 +9,227 @@
 <div class="main">
 
 
-    <h1>Work samples by Thomas Sieren
+    <h1>Work samples overview
     </h1>
 
-    <h2>www.TrackerGame.de
+    <h2>TrackerGame.de
     </h2>
 
-    <b>About the Project:</b>
+    <div class="content">
+        <div class="description">
 
-    Tracker Game is a single-page web application that allows a user to track his daily food energy uptake.
-    It offers various ways to create, manage and categorize food entries. It features games elements, like a quest and
-    task system, achievements, tutorial,
-    short and longterm progressindicators.
-    The layout is optimzied for devices with small screens.
-    Color and design is adapted to visual games.
+            Gamification of a diet and weight loss journal, implemented as a responsive, single-page web application.
 
-    <ul>
+        </div>
 
 
-        <li><b>
-            Design and implementation:
-        </b>
-            Html5 JavasScript Single-page web application.
+        <!--
+        <div class="section">About the Project:</div>
+         -->
+
+        <h3>
 
 
-            Dependency injection mechanism of angular separate business logic and modular way.
-            Model classes live in respective services, and used inheritance to avoid duplicaton.
+        </h3>
 
-            decoupling a publish subscribe service
-            Responsiveness I use bootstrap framework (Grid-layout system)
+        <div class="section">
+
+            Features
+        </div>
+
+        <ul>
+            <li>
+                Tracker Game allows its users to track their daily food energy uptake.
+                It offers various ways to create, manage and categorize food entries.
+            </li>
+
+            <li> To support the users motivation several game elements are build in, among them: Rewards, a quest and
+                task system, achievements, a tutorial, short- and long-term progress indicators.
+            </li>
 
 
-            app itself is fully responsive and optimized for mobile platforms single page web application
-            larger project optimized for mobile,
-            development server and link to the live site.
+            <li>
+                A major design goal was to make it easy and effortless to enter new data and reuse it later.
+                All the necessary calculations can be done within the webapp.
+            </li>
+            <li>
+                The layout is optimzied for devices with small screens.
+            </li>
+            <li>
 
-        </li>
-        <li>
-            <b>
-                Libraries and frameworks used:
-            </b>
-            Frontend: AngularJS, Bootstrap3, D3;
+                Color scheme and design are inspired by casual games to underline the game character
 
-            Backend: Python Django and Django&nbsp;REST&nbsp;framework, Nginx, PostgreSQL,
-            (a version using Neo4j as a graph database is currently in development)
-        </li>
+            </li>
+        </ul>
 
-        <li>
-            Link to live site:
-            <a href="http://www.trackergame.de" target="_blank">www.trackergame.de </a> (registration / marketing site)
-        </li>
-    </ul>
+        <div class="section">
 
-    <h2>Conway Game of Life
+            Libraries and frameworks used:
+        </div>
+
+        <ul>
+            <li>
+
+                Frontend: AngularJS, Bootstrap3, Less, D3;<br/>
+            </li>
+            <li>
+
+
+                Backend: Python Django and Django&nbsp;REST&nbsp;framework, Nginx, PostgreSQL,
+                (a version using Neo4j as a graph database is currently in development)
+            </li>
+
+
+        </ul>
+        <div class="section"> Links</div>
+        <ul>
+
+            <li>
+
+                <a class="demo" href="http://www.trackergame.de" target="_blank">Live site</a> (registration /
+                marketing site)
+            </li>
+        </ul>
+    </div>
+
+    <h2>Conway's Game of Life
     </h2>
 
-    Demo App written decoupled code and with an TTD appraoch.
-
-    <!--
-
-     warum
-    -  organisation, uebersichtlicher code, reusable code (subclass austauschbar)
-    - decoupled code: design patterns ,     mvc, observer
-    - klassische vererbung ,
-     kann tests schreiben, kenne die frameworks
-     - mit tools umgehen (npm)
-    - vanilla js ohne frameworks
-
-    - lint free
+    <div class="content">
+        <div class="description">
 
 
-    - code quality
-    # sind file names akkurat
-    # dokumentation, more comments
+            MVC demo app written with a test-driven development approach.
+        </div>
 
-    -->
+        <ul>
+            <li>
+
+                Model and view are fully decoupled; this allows for switching between a Canvas View and a View using
+                &lt;div&gt;-Elments
+                while the simulation keeps running in the background
+
+            </li>
+        </ul>
+        <div class="section">
+
+            Libraries and frameworks used:
+        </div>
+        <ul>
 
 
-    <ul>
-        <li> open source
-            <a href="http://ndldd.github.io/conway/" target="_blank"> link </a>
-        </li>
+            <li>Jasmine and karma Test Runner for unit tests
 
-        <li> code on github project description
-        </li>
+            </li>
+            <li>requireJS to modularize the app
+            </li>
+        </ul>
+        <div class="section">Links</div>
+        <ul>
+            <li> open source
+                <a class="demo" href="http://ndldd.github.io/conway/" target="_blank"> link </a>
+            </li>
+            <li>code on github</li>
 
-        <li>extensive unit tests (jasmine, karma Test Runner)
-            modular code
-            no libraries execpt requireJS for modularization
-        </li>
-    </ul>
+        </ul>
 
-    <h2>"Echtzeit", a project created during Hamburg Open Data meetups
+    </div>
+    <h2>Echtzeit: Hamburg in real-time
     </h2>
-    Visualisation, Dom manipulation
-    <!--
-      - jquery like dom manipulation,
-      - basic event handling
-      - styling and css,
-      - binding to events
-      - working with data
 
-    - external libraries used: read from google table,
+    <div class="content">
+        <div class="description">
+            Simulated real time data visualisation, a project created during Hamburg Open Data meetups
 
-      - ?? prototypical inheritance
-      - instance methods
-      -
+        </div>
+        <ul>
+            <li>
+                Shows tiles that contain public data facts about Hamburg.
 
-        # lint code
-        # separate code into smaller methods
-        # format code
+                More Details are shown when the visitor hovers over a tile.
+                The Data is parsed from a Google Spreadsheet.
+                The layout is created by using CSS3-columns.
 
 
+            </li>
+        </ul>
 
-     -->
+        <div class="section">Libraries and frameworks used:</div>
 
+        <ul>
+            <li> AngularJS</li>
+            <li>
+                <a href="https://github.com/jsoma/tabletop">Tabletop</a> to import the Data from a Google spreadsheet
 
-    <ul>
+            </li>
+        </ul>
+        <div class="section">
 
+            Links
+        </div>
 
-        <li>open source
-            <a href="http://ndldd.github.io/echtzeit/app/#/" target="_blank">demo</a>
-            code on github
-        </li>
+        <ul>
+            <li>open source
+                <a class="demo" href="http://ndldd.github.io/echtzeit/app/#/" target="_blank">live site</a>
+                code on github
+            </li>
 
-        <li> used frameworks: AngularJs (jquery-light)
-            https://github.com/jsoma/tabletop
+        </ul>
 
-        </li>
-    </ul>
-
-
+    </div>
     <h2>Wubi trainer (work in progress)
     </h2>
 
-    <ul>
+    <div class="content">
+        <div class="description">
 
-        <li>A typing tutor for the chinese input method 五筆字型輸入法
-            <a href="http://ndldd.github.io/wubi-trainer/app/#/info"> explanations and live site</a>
+            An online typing tutor for the chinese "Wubi" input method (五筆字型輸入法).
+            Intended for learners of chinese as a foreign language.
+        </div>
 
-            Aim was to create a javascript and open source version of language learners.
+        <ul>
 
-        </li>
-        Modern Google Material Design, flexbox layout
-        <li>
-        <li>Corrects the user, with feedback, progress, warning for difficult characters, and hints for wrong answers
-        </li>
-        <li> Allows to compose lessons</li>
-        <li>simple algorithm for</li>
+            <li>
+
+                Wubi is a input method that allows to type chinese characters based on their
+                components and overall structure. This is helpful when memorizing how different characters
+                look and very useful for chinese learners. Unfortunately there are not many Wubi-learning
+                resources available for non-native speakers.
+
+            </li>
+            <li>
+                The app is keyboard-centered and provides feedback for: Wrong or correct input, overall progress, and
+                warnings
+                for difficult characters.
+
+            </li>
+            <li>
+
+                It allows to practice the keyboard-location of the character components as well as the sequence for
+                whole characters.
+            </li>
 
 
-        </li>
-    </ul>
+        </ul>
 
+
+        <div class="section">Libraries and frameworks used:</div>
+        <ul>
+            <li> AngularJS, Angular Material
+            </li>
+        </ul>
+
+        <div class="section">Links
+        </div>
+
+        <ul>
+            <li>
+                <a class="demo" href="http://ndldd.github.io/wubi-trainer/app/#/info" target="_blank"> live site and
+                    more
+                    info</a>
+            </li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>
