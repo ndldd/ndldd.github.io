@@ -69,6 +69,9 @@ a.demo{
  color:green;
     font-weight: bolder;
 }
+a.code {
+    font-weight: bolder;
+}
 
 .section{
     font-weight: bolder ;
